@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="tasks-display">
+        <div class="header">
+          <form action="" class="form">
+            <input class="add-text" type="text" placeholder="Enter your task">
+            <button class="task-btn" disabled>AddTask</button>
+          </form>
+        </div>
+        <ul class="list">
+          <li class="list-item hidden"><span class="txt"></span><span class="buttons"><button
+                  class="btn-edit btn-property">Edit</button><button class="btn-check btn-property">Done</button><button
+                  class="btn-del btn-property">&#10006</button></span>
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <div class="search-bar">
+          <input class="search" type="text" placeholder="Search task">
+          <h2 class="tasks-number">All Tasks: 0</h2>
+          <h2 class="tasks-todo-number">Tasks To Do: 0</h2>
+        </div>
+      </footer>
+    </div>
+    <div class="task-edit-wrapper hidden">
+      <div class="task-edit-container">
+        <form action="">
+          <p class="task-id"></p>
+          <p class="task-id-desc">Edit your task:</p>
+          <textarea name="name" rows="4"></textarea>
+          <button type="submit" class="btn-edit edit">Edit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/index-front.js" type="module"></script>
+  </body>
+
+</html>
